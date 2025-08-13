@@ -1,1 +1,30 @@
-/* You can add global styles to this file, and also import other style files */
+/* Small utility spacing tweak */
+section { padding-top: 80px; padding-bottom: 80px; }
+.card img { object-fit: cover; height: 180px; }
+
+/* AOS init styles if needed */
+[data-aos] { opacity: 0; transform: translateY(10px); }
+[data-aos].aos-animate { opacity: 1; transform: none; }
+
+html, body { height: 100%; margin: 0; }
+body { display: flex; flex-direction: column; min-height: 100vh; }
+app-root { display: flex; flex-direction: column; flex: 1; }
+main { flex: 1; }
+
+/* Make each page section tall enough so footer appears only after scroll */
+.page-section {
+  min-height: 100vh;         
+  padding-top: 80px;          
+  padding-bottom: 120px;     
+  display: flex;
+  align-items: center;       
+}
+
+/* If you want a lighter layout on mobile, reduce the extra bottom padding */
+@media (max-width: 576px) {
+  .page-section {
+    padding-bottom: 90px;
+  }
+}
+
+

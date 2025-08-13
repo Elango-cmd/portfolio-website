@@ -1,0 +1,6 @@
+.nav-link { color: #555; transition: color .15s; }
+.nav-link:hover { color: var(--primary); }
+.navbar-brand { color: var(--primary); font-size: 1.15rem; }
+@media (max-width: 991px) {
+  .navbar { padding: .5rem 0; }
+}

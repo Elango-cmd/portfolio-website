@@ -1,0 +1,30 @@
+    <section id="contact" class="py-5 bg-light" data-aos="fade-up">
+      <div class="container">
+        <h2 class="mb-4">Contact</h2>
+        <div class="row">
+          <div class="col-md-6">
+            <form (submit)="send($event)">
+              <div class="mb-3">
+                <label class="form-label">Name</label>
+                <input class="form-control" required />
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Email</label>
+                <input type="email" class="form-control" required />
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Message</label>
+                <textarea class="form-control" rows="5" required></textarea>
+              </div>
+              <button class="btn btn-primary" type="submit">Send Message</button>
+            </form>
+          </div>
+          <div class="col-md-6">
+            <h5>Find me</h5>
+            <p>Email: <a [href]="'mailto:' + email">{{ email }}</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/elango-java-developer" target="_blank">Elango Gopolakrishnan</a></p>
+            <p>GitHub: <a href="https://github.com/Elango-cmd" target="_blank">Elango-cmd</a></p>
+          </div>
+        </div>
+      </div>
+</section>

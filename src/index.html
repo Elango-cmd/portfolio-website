@@ -1,11 +1,39 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>ElangoPortfolio</title>
+  <title>Elango Gopalakrishnan - Java Full Stack Developer</title>
   <base href="/">
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Portfolio of Elango Gopalakrishnan - Java Full Stack Developer specializing in Java, Spring Boot, MySQL, and Angular.">
+  <meta name="keywords" content="Java, Spring Boot, MySQL, Angular, Full Stack Developer, Portfolio">
+  <meta name="author" content="Elango Gopalakrishnan">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+
+  <!-- Font & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- AOS Animation CSS -->
+  <link rel="stylesheet" href="node_modules/aos/dist/aos.css">
+
+  <!-- For GitHub Pages Fix (Routing) -->
+  <script>
+    // Redirect 404s to index.html for SPA on GitHub Pages
+    (function(l) {
+      if (l.search[1] === '/' ) {
+        var decoded = l.search.slice(1).split('&').map(function(s) { 
+          return s.replace(/~and~/g, '&') 
+        }).join('?');
+        window.history.replaceState(null, null, l.pathname.slice(0, -1) + decoded + l.hash);
+      }
+    }(window.location))
+  </script>
 </head>
 <body>
   <app-root></app-root>

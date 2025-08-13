@@ -1,0 +1,13 @@
+<section id="skills" class="page-section bg-light" data-aos="fade-up">
+      <div class="container">
+        <h2 class="mb-4">Skills</h2>
+        <div class="row g-3">
+          <div class="col-6 col-md-3" *ngFor="let s of skills">
+            <div class="card h-100 text-center p-3">
+              <i [class]="s.icon + ' fa-2x mb-2'"></i>
+              <h6 class="mb-0">{{ s.name }}</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+</section>

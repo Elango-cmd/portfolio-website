@@ -1,0 +1,44 @@
+.card img { object-fit: cover; height: 180px; }
+.btn-group .btn.active { background: #0d6efd; color: #fff; border-color: #0d6efd; }
+.badge { height: fit-content; }
+/* General project card style */
+.project-card {
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  transition: all 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Accent border colors by type */
+.project-card.work {
+  border-left: 4px solid #0d6efd; /* Blue */
+}
+
+.project-card.personal {
+  border-left: 4px solid #6c757d; /* Gray */
+}
+
+.project-card.in-progress {
+  border-left: 4px solid #ffc107; /* Yellow */
+}
+
+/* Title styling */
+.project-card .card-title {
+  font-weight: 600;
+  color: #222;
+}
+
+/* Buttons spacing */
+.project-card .btn {
+  min-width: 100px;
+}
+
+/* Small tech text color */
+.project-card .card-text.small {
+  font-style: italic;
+  color: #6c757d;
+}
